@@ -22,6 +22,6 @@ for (let i = 0; i < elements.length; i++) {
   }
 }
 const grade = totalChanges > 0 ? 'F' : 'A';
-let message = `No Human Being is Illegal\n\nTotal changes: ${totalChanges}\n This webpage has a grade of: ${grade}`;
+let message = `No Human Being is Illegal\n\nTotal changes to be made: ${totalChanges}\n This webpage has a grade of: ${grade}`;
 alert(message);
 
