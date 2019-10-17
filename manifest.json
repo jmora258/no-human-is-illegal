@@ -2,14 +2,19 @@
   "name": "No human is illegal",
   "author": "jmora258",
   "description": "Turns anti-immigrant/xenophobic terms such as 'illegals' and 'illegal aliens' to 'undocumented immigrants'",
-  "version": "1.0",
-  "permissions": ["activeTab"],
+  "version": "0.1.0",
+  "permissions": ["activeTab", "declarativeContent", "storage"],
   "manifest_version": 2,
+  "browser_action": {
+  	"default_icon": "favicon.png",
+	"default_popup": "popup.html",
+	"default_title": "No Human Is Illegal"
+  },
   "content_scripts": [
     {
       "matches": ["<all_urls>"],
-      "js": ["contentScript.js"],
-      "css": ["styles.css"],
+      "js": ["scripts/content.js"],
+      "css": ["css/styles.css"],
       "run_at": "document_end"
     }
   ]
