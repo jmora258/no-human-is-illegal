@@ -1,7 +1,7 @@
 {
   "name": "No human is illegal",
   "author": "jmora258",
-  "description": "Turns anti-immigrant/xenophobic terms such as 'illegals' and 'illegal aliens' to 'undocumented immigrants'",
+  "description": "Replaces anti-immigrant/xenophobic terms such as 'illegal immigrants' and 'illegal aliens' with 'undocumented immigrants'",
   "version": "0.1.0",
   "permissions": ["activeTab", "tabs"],
   "manifest_version": 2,
