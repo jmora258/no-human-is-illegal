@@ -3,8 +3,6 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
     
   // 2. Process request 
     if (request.action == "AbolishICE") {
-      console.log("good! execute command received");
-
       let elements = document.getElementsByTagName('*');
       let totalChanges = 0;
 
