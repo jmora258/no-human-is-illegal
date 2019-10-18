@@ -10,6 +10,11 @@
 	"default_popup": "popup.html",
 	"default_title": "No Human Is Illegal"
   },
+  "icons": {
+      "16": "icon16.png",
+      "48": "icon48.png",
+      "128": "icon128.png" 
+  },
   "content_scripts": [
     {
       "matches": ["<all_urls>"],
