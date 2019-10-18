@@ -1,10 +1,33 @@
+/* Google Analytics  
+ */
+  // Tracking ID: 
+  var _AnalyticsCode = "UA-150392574-1";
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', _AnalyticsCode]);
+  _gaq.push(['_trackPageview']);
+
+  // Analytics Asynchronous Tracking Code: 
+(function() {
+  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+  ga.src = 'https://ssl.google-analytics.com/ga.js';
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+
+ // Track clicks on "get results" button
+ function trackButtonClick(e) {
+  _gaq.push(['_trackEvent', e.target.id, 'clicked']);
+}
+
 // 1. Establish connection with ACTIVE TAB 
 // 2. Send request to CONTENT.js and execute code
 // 3. Receive callback with data 
 // 4. Display it on the Popup 
-
 document.addEventListener('DOMContentLoaded', function() {
   document.getElementById('results').textContent = "Extension loaded";
+
+  /* event handlers for the popup's 'Get Results' button */
+  const resultsButton = document.querySelectorAll('button');
+  resultsButton.addEventListener('click', trackButtonClick);
 
   const button = document.getElementById("getResults");
   button.addEventListener('click', function () {
