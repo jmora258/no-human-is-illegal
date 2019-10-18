@@ -15,7 +15,6 @@
       "48": "icon48.png",
       "128": "icon128.png" 
   },
-  "content_security_policy": "script-src 'self' https://ssl.google-analytics.com; object-src 'self'",
   "content_scripts": [
     {
       "matches": ["<all_urls>"],
@@ -23,5 +22,6 @@
       "css": ["css/styles.css"],
       "run_at": "document_end"
     }
-  ]
+  ], 
+  "content_security_policy": "script-src 'self' https://ssl.google-analytics.com; object-src 'self'"
 }
