@@ -4,6 +4,7 @@
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <style> 
     .main-container {
+      padding: 1em;
       align-content: center;
       border: 1px solid rgba(220,220,220,0.5);
       background: white;
@@ -12,6 +13,14 @@
       min-height: 250px;
       width: 300px; 
     }
+    #note {
+      color: purple;
+      font-size: 1em;
+      font-style: italic;
+    }
+    #primary-message {
+      font-size: 1.2em;
+    }
   </style>
     </head>
     <body>
@@ -19,6 +28,7 @@
         <h3>No Human Is Illegal</h3>
         <button class="btn btn-primary" id="getResults">Click to Get Results</button> 
         <h4>Results: </h4>
+        <p>Changes are <span style="background-color: #FFFF00;">highlighed.</span></p>
 	      <p id="results"></p>
       </div>
       <!-- load scripts -->
